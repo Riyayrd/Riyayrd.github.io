@@ -3,63 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Riya Disawal - Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #bcd2e8;
+            color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #333;
+            background-color: #2b3a42;
             color: white;
-            padding: 1rem 0;
             text-align: center;
+            padding: 2rem 0;
         }
-        nav {
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+        }
+        .section {
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section h2 {
             text-align: center;
-            margin: 1rem 0;
+            margin-bottom: 1.5rem;
+            color: #2b3a42;
         }
-        nav a {
-            color: #333;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-size: 1.1rem;
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
         }
-        nav a:hover {
-            text-decoration: underline;
+        .about img {
+            max-width: 200px;
+            max-height: 200x;
+            border-radius: 00%;
+            display: block;
+            margin: 0 auto;
         }
-        main {
-            padding: 2rem;
+        .about p {
             text-align: center;
+            margin-top: 1rem;
+        }
+        .work, .education, .projects, .skills {
+            margin-top: 2rem;
+        }
+        .work .job, .education .edu, .projects .project, .skills .skill {
+            margin-bottom: 1.5rem;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .work .job h3, .education .edu h3, .projects .project h3, .skills .skill h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #2b3a42;
+        }
+        .work .job p, .education .edu p, .projects .project p, .skills .skill p {
+            margin: 0.5rem 0 0;
         }
         footer {
-            background-color: #333;
-            color: white;
             text-align: center;
+            background-color: #2b3a42;
+            color: white;
             padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            margin-top: 2rem;
+        }
+        .contact-info a {
+            color: #2b3a42;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Riya Disawal</h1>
+        <p>Business Technology Consultant | Data Engineer | Automation Expert</p>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <main>
-        <h2>About Us</h2>
-        <p>This is a basic HTML template for your website. Customize it as needed!</p>
-    </main>
+    <section class="about section">
+        <div class="about">
+            <img src="Riya_2.jpeg" alt="Riya Disawal">
+            <div class="intro">
+                <p>Hello! I’m Riya Disawal, a passionate Business Technology Consultant specializing in data engineering and automation. With a proven track record of solving complex problems, I aim to create impactful solutions. Outside work, I enjoy exploring technology and organizing team-building activities.</p>
+            </div>
+        </div>
+    </section>
+    <section class="work section">
+        <h2>Work Experience</h2>
+        <div class="job">
+            <h3>Business Technology Solutions Associate Consultant - ZS Associates</h3>
+            <p><strong>Duration:</strong> 2022 - Present</p>
+            <p>Collaborated on data engineering projects, implemented automation workflows, and delivered technology-driven solutions for clients in the healthcare and pharmaceutical domains.</p>
+        </div>
+        <div class="job">
+            <h3>Intern - Data Engineering</h3>
+            <p><strong>Duration:</strong> 2021</p>
+            <p>Designed and implemented efficient ETL pipelines, contributing to the team’s effort to improve data accessibility and performance.</p>
+        </div>
+    </section>
+    <section class="education section">
+        <h2>Education</h2>
+        <div class="edu">
+            <h3>Bachelor of Technology in Computer Science</h3>
+            <p><strong>University:</strong> XYZ Institute of Technology</p>
+            <p><strong>Year:</strong> 2018 - 2022</p>
+        </div>
+    </section>
+    <section class="projects section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title 1</h3>
+            <p>Developed a real-time analytics dashboard using Python and SQL, improving business insights for client reporting.</p>
+        </div>
+        <div class="project">
+            <h3>Project Title 2</h3>
+            <p>Created an automation workflow for data cleansing, reducing processing time by 40%.</p>
+        </div>
+    </section>
+    <section class="skills section">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>Data Engineering</h3>
+            <p>Proficient in building and optimizing data pipelines, ETL processes, and data warehousing solutions.</p>
+        </div>
+        <div class="skill">
+            <h3>Automation</h3>
+            <p>Experienced in automating business processes to enhance efficiency and accuracy.</p>
+        </div>
+        <div class="skill">
+            <h3>Programming Languages</h3>
+            <p>Skilled in Python, SQL, and JavaScript.</p>
+        </div>
+    </section>
     <footer>
-        &copy; 2024 My Website | All Rights Reserved
+        <p>&copy; 2024 Riya Disawal. All Rights Reserved.</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:riya.disawal@example.com">riya.disawal@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/riyad/">linkedin.com/in/riyad/</a></p>
+        </div>
     </footer>
 </body>
 </html>
