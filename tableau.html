@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Dashboard - Riya Disawal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f6fa;
+            color: #333;
+        }
+        header {
+            background-color: #1b2a41;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background-color: #324a5f;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 3rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .description {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            text-align: left;
+        }
+        footer {
+            text-align: center;
+            background-color: #1b2a41;
+            color: white;
+            padding: 1.5rem 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tableau Dashboard</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="llm-project.html">LLM Project</a>
+    </nav>
+    <section class="section">
+        <h2>Flu Shot Report Dashboard</h2>
+        
+		<iframe src="https://public.tableau.com/views/FluShotReport/FlueShotReport?:showVizHome=no&:embed=true"></iframe>
+        <div class="description">
+            <h3>Project Overview</h3>
+            <p>This Tableau dashboard provides an interactive visualization of flu shot distribution trends across different demographics. The goal of this project was to analyze flu shot coverage and identify trends based on factors like age, location, and time.</p>
+            <h3>Key Insights</h3>
+            <ul>
+                <li>Trends in flu shot adoption across various demographics.</li>
+                <li>Comparison of flu shot coverage by year and region.</li>
+                <li>Identified key areas where flu shot distribution could be improved.</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Riya Disawal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
